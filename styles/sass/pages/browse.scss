@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    color: $grey;
+
+    .main-cont-block {
+        margin-left: $sidebar-width;
+    }
+
+    font-family: 'Mulish',
+    sans-serif;
+
+    background-image: url(../../assets/backgroundImages/sky.jpg);
+    @include background-basic;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+@import '../layout/header';
+@import '../layout/side-bar';
+
+.main-browse-container {
+    @include basic-block-size;
+
+    .none-movie {
+        font-size: 3em;
+        width: 100%;
+        @include row-flex;
+        color: white
+    }
+}
+
+@import '../layout/browserInput';
+@import '../layout/browseMovieBlock';

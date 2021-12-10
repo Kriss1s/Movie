@@ -1,0 +1,130 @@
+.cont-btn-block {
+    @include row-flex;
+    justify-content: flex-end;
+    color: $grey;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.movie-btns-cont {
+    @include row-flex;
+    justify-content: space-between;
+
+
+    .cont-btn {
+        margin: $p-1 0.5rem;
+        padding: .5rem $p-1;
+        background: transparent;
+
+        border: 1px $grey solid;
+        border-radius: 5px;
+
+
+
+
+    }
+
+    .disabled {
+        cursor: none;
+        color: $grey;
+
+        &:hover {
+            cursor: not-allowed;
+        }
+    }
+
+    .active {
+        color: white;
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+            color: white;
+            cursor: pointer;
+            text-shadow: 1px 0.8px $base-red, 1px 1.8px $base-red, 1px 2.8px $base-red;
+        }
+    }
+}
+
+
+.movie-block {
+    @include basic-block-size;
+
+    .movie-container {
+        @include row-flex;
+        flex-wrap: wrap;
+
+        gap: 0 1em;
+        height: 30vh;
+
+
+        .movie-item {
+            position: relative;
+            height: 100%;
+            width: calc((100% - 3em)/4);
+            @include col-flex;
+            @include background-basic;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding: 0 1em 1em 0;
+            border-radius: $basic-border-radius;
+
+
+            cursor: pointer;
+
+            // &:hover>.movie-img {
+            //     animation-name: circle;
+            //     animation-duration: 5s;
+            //     animation-iteration-count: 1;
+
+            // }
+
+            .movie-img {
+                @include base-img;
+                transition: all 300ms ease-in-out;
+            }
+
+            .movie-item-info {
+                color: white;
+                position: absolute;
+
+                h3 {
+                    font-size: 1.5em;
+                    margin-bottom: 0.5em;
+                }
+
+                .movie-item-btn {
+                    color: white;
+
+                    @include row-flex;
+                    justify-content: flex-end;
+
+                    button {
+                        cursor: pointer;
+                        border-radius: 5px;
+                        height: 2em;
+                        width: 3.5em;
+                        font-size: 1em;
+                        @include col-flex;
+                        margin: 0.2em;
+                        color: white;
+                        background: rgba($grey, $alpha: 0.4);
+                        border: none;
+
+
+                        &:last-child {
+                            margin-left: .5rem;
+                        }
+
+                        &:hover {
+                            background-color: white;
+                            color: $base-red;
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}

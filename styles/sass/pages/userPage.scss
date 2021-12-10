@@ -1,0 +1,185 @@
+body {
+    background-color: black;
+    color: $grey;
+
+    .main-cont-block {
+        margin-left: $sidebar-width;
+    }
+
+    background-image: url(../../assets/backgroundImages/sky.jpg);
+    @include background-basic;
+    background-attachment: fixed;
+    font-family: 'Mulish',
+    sans-serif;
+
+    .background {
+        position: absolute;
+        width: 90vw;
+        height: 100%;
+    }
+
+    .main-cont-block {
+        margin-left: $sidebar-width;
+
+        .user-container {
+            @include basic-card;
+
+            // gap: 15%;
+
+            .user-pic {
+                width: 40%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+
+                }
+            }
+
+            .user-information-div {
+                // @include col-flex;
+                width: 60%;
+                font-size: 1rem;
+
+                .row {
+                    width: 100%;
+                    padding: 0 4em;
+                    @include row-flex;
+                    margin: 2em 0;
+                    justify-content: space-between;
+
+                }
+
+                .line {
+                    border: none;
+                    border-bottom: 1px white solid;
+                    width: 4em;
+                }
+
+                .button-row {
+                    margin: 5em 0;
+
+                    .btn {
+                        padding-top: 1em;
+                        padding-bottom: 1em;
+                    }
+                }
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+
+        .movie-list {
+            width: 90%;
+            margin: auto;
+
+
+            .heading {
+                margin-top: 4%;
+                font-size: 2rem;
+                color: black;
+                font-weight: bold;
+                text-align: center;
+                text-shadow: 0 0 15px rgba($color: white, $alpha: 0.9);
+
+                &.hidden {
+                    display: none;
+                }
+            }
+
+            .fav-div {
+                &.hidden {
+                    display: none;
+                }
+            }
+
+            .cont-block {
+                padding-top: 3rem;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 1%;
+                height: 100%;
+                width: 100%;
+            }
+
+
+            .movie-item {
+                position: relative;
+                height: 35rem;
+                width: 100%;
+                @include col-flex;
+                @include background-basic;
+                justify-content: flex-end;
+                align-items: flex-end;
+                padding: 0 1em 1em 0;
+                border-radius: $basic-border-radius;
+
+                .movie-img {
+                    @include base-img;
+                }
+
+                .movie-item-info {
+                    color: white;
+                    position: absolute;
+                    width: 100%;
+                    height: 30%;
+                    left: 0;
+                    bottom: 0;
+                    padding-right: 1rem;
+                    background-color: rgba($color: black, $alpha: 0.6);
+                    border-radius: 0 0 $basic-border-radius $basic-border-radius;
+
+
+
+                    h3 {
+                        font-size: 1.5em;
+                        margin-bottom: 0.5em;
+                        text-align: end;
+                    }
+
+                    .movie-item-btn {
+                        color: white;
+
+                        @include row-flex;
+                        justify-content: flex-end;
+
+                        button {
+                            cursor: pointer;
+                            border-radius: 5px;
+                            height: 3.5em;
+                            width: 3.5em;
+                            font-size: 1em;
+                            @include col-flex;
+                            margin: 0.2em;
+                            color: white;
+                            background: rgba($grey, $alpha: 0.4);
+                            border: none;
+
+
+                            &:last-child {
+                                margin-left: .5rem;
+                            }
+
+                            &:hover {
+                                background-color: white;
+                                color: $base-red;
+                            }
+                        }
+                    }
+                }
+
+
+
+            }
+        }
+    }
+}
+
+
+@import '../layout/header';
+@import '../layout/side-bar';

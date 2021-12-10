@@ -1,0 +1,55 @@
+.movie-list {
+    @include row-flex;
+    gap: 1%;
+    padding: $p-1 0;
+
+    .tag {
+        background-color: rgba($color: $base-red, $alpha: 0.6);
+        padding: 0.5em 0.7em 0.5em 1em;
+        border-radius: $basic-border-radius;
+        @include row-flex;
+        gap: 1%;
+        color: white;
+
+        box-shadow: 0 0 20px 1px rgba($color: white, $alpha: 0.5), 0 0 100px 1px rgba($color: white, $alpha: 0.3);
+
+        span {
+            font-size: 1em;
+        }
+    }
+}
+
+.input-movie-form {
+    @include row-flex;
+    padding: $p-1;
+
+    .movie-search {
+        width: 50%;
+        height: 2rem;
+        background-color: transparent;
+        border: none;
+        border: 1px $grey solid;
+        border-radius: $basic-border-radius;
+        color: inherit;
+        padding: 0.5em 1em;
+    }
+
+    .search-btn {
+        background-color: transparent;
+        color: white;
+        border: 1px $grey solid;
+        border-radius: 50%;
+        font-size: inherit;
+        font-family: inherit;
+        width: 3.3rem;
+        height: 3.3rem;
+        cursor: pointer;
+        margin-left: $p-1;
+
+        span {
+            font-size: 1.6rem;
+            color: $grey;
+
+        }
+    }
+}

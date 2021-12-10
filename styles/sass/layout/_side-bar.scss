@@ -1,0 +1,51 @@
+.side-bar {
+    @include col-flex;
+    justify-content: space-between;
+    position: fixed;
+    width: $sidebar-width;
+    height: 100vh;
+    border-right: 1px solid $dark-grey;
+    background-color: rgba($color: black, $alpha: 0.7);
+
+    .logo {
+        width: 9vw;
+        height: 3.5rem;
+        background: url(../../assets/images/logo_transparent.png);
+        @include background-basic;
+    }
+
+
+    .side-bar-main {
+        @include col-flex;
+
+
+        .side-bar-link {
+            width: $sidebar-width;
+            text-align: center;
+            padding: $p-1 0;
+            text-decoration: none;
+            font-size: 1.15em;
+            color: $grey;
+            transition: border-right 300ms;
+            gap: 2%;
+            @include row-flex;
+
+            &:hover {
+                border-right: 5px red solid;
+                color: white;
+            }
+
+            &:hover span {
+                color: red;
+            }
+
+            .sidebar-icon {
+                font-size: 1em;
+            }
+
+
+        }
+    }
+
+
+}

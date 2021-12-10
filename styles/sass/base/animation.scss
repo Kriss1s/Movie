@@ -1,0 +1,40 @@
+@keyframes question {
+    0% {
+        opacity: 0;
+        text-shadow: 0px 0px 10px rgba($color: white, $alpha: 0.1)
+    }
+
+    50% {
+        opacity: 100%;
+        text-shadow: 0px 0px 10px rgba($color: white, $alpha: 0.7)
+    }
+
+    100% {
+        opacity: 0;
+        text-shadow: 0px 0px 10px rgba($color: white, $alpha: 0.1)
+    }
+}
+
+@keyframes shine {
+    0% {
+        box-shadow: 0px 0px 10px rgba($color: white, $alpha: 0.1)
+    }
+
+    50% {
+        box-shadow: 0px 0px 20px rgba($color: white, $alpha: 0.7)
+    }
+
+    100% {
+        box-shadow: 0px 0px 10px rgba($color: white, $alpha: 0.1)
+    }
+}
+
+@keyframes circle {
+    0% {
+        trasform: rotateX(0)
+    }
+
+    100% {
+        trasform: rotateX(360deg)
+    }
+}

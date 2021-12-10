@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+    color: $grey;
+
+    .main-cont-block {
+        margin-left: $sidebar-width;
+    }
+
+    font-family: 'Mulish',
+    sans-serif;
+}
+
+@import '../layout/header';
+@import '../layout/side-bar';
+@import '../layout/movie-block';
+
+
+.movie-block {
+    // grid-area:movie-block; s
+    height: 100%;
+}

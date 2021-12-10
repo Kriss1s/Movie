@@ -1,0 +1,16 @@
+{
+  "name": "finalproj",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "node-sass": "node-sass styles/sass/main.scss public/css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}

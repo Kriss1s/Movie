@@ -1,0 +1,39 @@
+footer {
+    @include row-flex;
+    height: 25vh;
+    justify-content: space-around;
+    margin-left: $sidebar-width;
+    background-color: rgba($color: black, $alpha: 0.7);
+    margin-top: 10%;
+    margin-bottom: 0;
+
+    .logo {
+        width: 16vw;
+        height: 8vh;
+        background: url(../../assets/images/logo_transparent.png);
+        @include background-basic;
+    }
+
+    p {
+        span {
+            font-size: 1em;
+            vertical-align: bottom;
+        }
+    }
+
+    .footer-info {
+        padding: 2em 0;
+        width: 16vw;
+        line-height: 1.5;
+
+        h3 {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1em;
+
+        }
+    }
+}
