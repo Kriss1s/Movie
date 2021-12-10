@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/browse.css">
+    <title>Movie</title>
+</head>
+
+<body>
+    <section class="side-bar">
+        <a class="logo" href="index.html"> </a>
+        <div class="side-bar-main">
+            <a class="side-bar-link sidebar-button" href="./index.html"><span class="material-icons">
+                home
+                </span>Home</a>
+            <a class="side-bar-link sidebar-button" href="browsePage.html"><span class="material-icons sidebar-icon">
+                    explore
+                </span> Browse</a>
+            
+            <a class="side-bar-link sidebar-button" href="./randomizer.html"><span class="material-icons sidebar-icon">
+                    science
+                </span> Randomizer</a>
+        </div>
+        <div>
+        
+        </div>
+    </section>
+
+    <section class="main-cont-block">
+        <nav class='nav'>
+
+            <div class="search">
+                <div class="searchInp" ><span class="numFav">0</span></div>
+                <button class="searchBtn">
+                    <span class="material-icons">
+                        favorite_border
+                        </span>
+                </button>
+
+            </div>
+            <div class="user-div" >
+                <div class="icon-div">
+                    <span class="material-icons user-pic">person</span>
+                </div>
+                
+                    <div class="logIn-block hidden" >
+                        
+                        <div class="logIn-btns">
+                            <button class="lg-btn btn">Log In</button>
+                            <button class="reg-btn btn">Register</button>
+                            
+                        </div>
+                            <div class="login-div">
+                                <form autocomplete="off" class="info">
+                                    <input type="text" name="login" id="login" placeholder="Login">
+                                    <input type="password" name="loginpassword" id="loginpassword" placeholder="Password">
+                                </form>
+                                <div class="logIn-btns">
+                                    <button class="btn" id="sign-btn">Sign In</button>
+                                </div>
+
+                            </div>
+                            
+                            <div class="reg-div hidden">
+                                <form autocomplete="off" class="register">
+                                    <input type="text" name="name" id="name" placeholder="Your First Name">
+                                    <input type="text" name="lastname" id="lastname" placeholder="Your Last Name">
+                                    <input type="text" name="loginReg" id="loginReg" placeholder="Login">
+                                    <input type="password" name="password" id="password" placeholder="Password">
+                                    
+                                </form>
+                                <div class="logIn-btns ">
+                                    <button class="btn" id="reg-btn">Register</button>
+                                </div>
+                            </div>
+                            
+                        
+                    </div>
+                
+            </div>
+
+        </nav>
+        <section class="main-browse-container">
+            <div class="movie-list">
+                
+                
+            </div>
+            <div class="input-movie-form" action="">
+                <input class="movie-search" type="text" name="movie"placeholder="What do you want to see?">
+                <button class=" search-btn"><span class="material-icons">search</span></button>
+            </div>
+            <div class="browse-movie-section">
+                <!-- <div class="movie">
+                    <div class="movie-img">
+                        <img src="./assets/images/queengambit.webp" alt="">
+                    </div>
+                    <div class="info-div">
+                        <h3>Queen Gambit</h3>
+                        <div class="additional-info">
+                            <span class="rate-span">9.8</span>
+                            <div class="browse-movie-btn">
+                                
+                                <button class="browse-movie-btn-single base-btn"><span class="material-icons">favorite_border</span></button>
+                                <button class="browse-movie-btn-single base-btn"><span class="material-icons">add</span></button>
+                                
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere sint nesciunt. Delectus rerum ex iure optio. Blanditiis nemo laudantium, atque obcaecati culpa facilis. Rem vel est consequuntur dolores excepturi?</p>
+                        
+                    </div> -->
+                </div>
+                
+            </div>
+        </section>
+        </section>
+    </section>
+       
+
+    <script src="./js/browse.js" type="module"></script>
+</body>
+
+
+</html>
