@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/main.css">
+    <title>Movie</title>
+</head>
+
+<body>
+    <section class="side-bar">
+        <a class="logo" href="index.html"> </a>
+        <div class="side-bar-main">
+            <a class="side-bar-link sidebar-button" href="./index.html"><span class="material-icons">
+                home
+                </span>Home</a>
+            <a class="side-bar-link sidebar-button" href="browsePage.html"><span class="material-icons sidebar-icon">
+                    explore
+                </span> Browse</a>
+            
+            <a class="side-bar-link sidebar-button" href="./randomizer.html"><span class="material-icons sidebar-icon">
+                    science
+                </span> Randomizer</a>
+            
+        </div>
+        <div>
+         
+        </div>
+    </section>
+
+    <section class="main-cont-block">
+        <nav class='nav'>
+
+            <div class="search">
+                <!-- <input class="searchInp" type="search" name='search' id="search" placeholder="Search"> -->
+                <div class="searchInp" ><span class="numFav">0</span></div>
+                <button class="searchBtn">
+                    <span class="material-icons">
+                        favorite_border
+                        </span>
+                </button>
+
+            </div>
+            <div class="user-div" >
+                <div class="icon-div">
+                    <span class="material-icons user-pic">person</span>
+                </div>
+                
+                    <div class="logIn-block hidden" >
+                        
+                        <div class="logIn-btns">
+                            <button class="lg-btn btn">Log In</button>
+                            <button class="reg-btn btn">Register</button>
+                            
+                        </div>
+                            <div class="login-div">
+                                <div class="info">
+                                    <input type="text" name="login" id="login" placeholder="Login">
+                                    <input type="password" name="loginpassword" id="loginpassword" placeholder="Password">
+                                </div>
+                                <div class="logIn-btns">
+                                    <button class="btn" id="sign-btn">Sign In</button>
+                                </div>
+
+                            </div>
+                            
+                            <div class="reg-div hidden">
+                                <form autocomplete="off" class="register">
+                                    <input type="text" name="name" id="name" placeholder="Your First Name">
+                                    <input type="text" name="lastname" id="lastname" placeholder="Your Last Name">
+                                    <input type="text" name="loginReg" id="loginReg" placeholder="Login">
+                                    <input type="password" name="password" id="password" placeholder="Password">
+                                </form>
+                                <div class="logIn-btns ">
+                                    <button class="btn" id="reg-btn">Register</button>
+                                </div>
+                            </div>
+                            
+                        
+                    </div>
+                
+            </div>
+
+        </nav>
+        <section class="header-block">
+            
+        </section>
+
+        <section class="movie-block">
+            <div class="movie-category-cont">
+                <div class=movie-btns-cont>
+                    <h2>Popular Now</h2>
+                    <div class="cont-btn-block">
+                        <button class="left-btn cont-btn disabled" disabled>
+                            < </button>
+                                <button class="right-btn cont-btn active"> > </button>
+                    </div>
+                </div>
+                <div class="movie-container movie-container-0"> 
+                    <!-- <div class="movie-item">
+                        <div class="movie-item-info">
+                            <h3>Harry Potter</h3>
+                        <div class="movie-item-btn">
+                            <button><span class="material-icons">favorite_border</span></button>
+                            <button><span class="material-icons">add</span></button>
+                        </div>
+                        </div>
+                    </div> -->
+                    
+                    
+                </div>
+            </div>
+            <div class="movie-category-cont">
+                <div class=movie-btns-cont>
+                    <h2>Top Rated</h2>
+                    <div class="cont-btn-block">
+                        <button class="left-btn cont-btn disabled" disabled>
+                            < </button>
+                                <button class="right-btn cont-btn active"> > </button>
+                    </div>
+                </div>
+                <div class="movie-container movie-container-1">
+                </div>
+            </div>
+            <div class="movie-category-cont">
+                <div class=movie-btns-cont>
+                    <h2>Top Romance</h2>
+                    <div class="cont-btn-block">
+                        <button class="left-btn cont-btn disabled" disabled>
+                            < </button>
+                                <button class="right-btn cont-btn active"> > </button>
+                    </div>
+                </div>
+                <div class="movie-container movie-container-1">
+                    
+                    
+                </div>
+            </div>
+            <div class="movie-category-cont">
+                <div class=movie-btns-cont>
+                    <h2>Top History</h2>
+                    <div class="cont-btn-block">
+                        <button class="left-btn cont-btn disabled" disabled>
+                            < </button>
+                                <button class="right-btn cont-btn active"> > </button>
+                    </div>
+                </div>
+                <div class="movie-container movie-container-1">
+                    
+                    
+                </div>
+            </div>
+                    
+                </div>
+            </div>
+            <div class="movie-category-cont">
+                <div class=movie-btns-cont>
+                    <h2>Top Fantasy</h2>
+                    <div class="cont-btn-block">
+                        <button class="left-btn cont-btn disabled" disabled>
+                            < </button>
+                                <button class="right-btn cont-btn active"> > </button>
+                    </div>
+                </div>
+                <div class="movie-container movie-container-1">
+                    
+                    
+                </div>
+            </div>
+
+        </section>
+        
+    </section>
+   
+    
+    <script src="./js/main.js" type="module"></script>
+    <footer>
+        <div class="logo"> </div>
+    <p>2021 <span class="material-icons">
+        copyright
+        </span> All rights reserved </p>
+        <div class="footer-info">
+        <h3>Aboout Us</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero itaque at sapiente quos veniam porro vero ullam. Sapiente deserunt ad harum, nam, itaque, ex eligendi mollitia blanditiis unde at maiores.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
