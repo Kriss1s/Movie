@@ -37,12 +37,12 @@ export async function fetchSearchGenre(){
     
 }
 export async function fetchUsers() {
-    return fetch('http://localhost:3000/users').then(res => {
+    return fetch('https://my-json-server.typicode.com/Kriss1s/Movie/db/users').then(res => {
         return res.json()
     })
 }
 export async function fetchUsersById(id) {
-    return fetch(`http://localhost:3000/users/${id}`).then(res => {
+    return fetch(`https://my-json-server.typicode.com/Kriss1s/Movie/db/users/${id}`).then(res => {
         return res.json()
     })
 }
